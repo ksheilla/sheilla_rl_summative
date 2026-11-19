@@ -1,0 +1,24 @@
+{
+  "name": "dqn_12_small_net",
+  "final_train_reward": 72.44140434265137,
+  "eval_mean": 73.4886286927766,
+  "eval_std": 2.72792762198112,
+  "minutes": 1.46,
+  "seed": 0,
+  "total_frames": 30000,
+  "frames_per_batch": 200,
+  "updates_per_batch": 50,
+  "learning_starts": 1000,
+  "batch_size": 64,
+  "buffer_size": 20000,
+  "lr": 0.001,
+  "gamma": 0.99,
+  "hidden": [
+    32,
+    32
+  ],
+  "eps_init": 1.0,
+  "eps_end": 0.05,
+  "eps_decay_frames": 15000,
+  "tau": 0.01
+}

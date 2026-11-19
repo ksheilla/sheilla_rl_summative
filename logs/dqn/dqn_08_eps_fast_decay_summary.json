@@ -1,0 +1,24 @@
+{
+  "name": "dqn_08_eps_fast_decay",
+  "final_train_reward": 74.19662895202637,
+  "eval_mean": 74.23943361330817,
+  "eval_std": 2.887810954124755,
+  "minutes": 1.64,
+  "seed": 0,
+  "total_frames": 30000,
+  "frames_per_batch": 200,
+  "updates_per_batch": 50,
+  "learning_starts": 1000,
+  "batch_size": 64,
+  "buffer_size": 20000,
+  "lr": 0.001,
+  "gamma": 0.99,
+  "hidden": [
+    128,
+    128
+  ],
+  "eps_init": 1.0,
+  "eps_end": 0.05,
+  "eps_decay_frames": 5000,
+  "tau": 0.01
+}

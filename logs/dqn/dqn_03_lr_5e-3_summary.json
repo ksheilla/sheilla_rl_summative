@@ -1,0 +1,24 @@
+{
+  "name": "dqn_03_lr_5e-3",
+  "final_train_reward": 74.25602264404297,
+  "eval_mean": 72.97654949736027,
+  "eval_std": 3.4062282737616623,
+  "minutes": 1.68,
+  "seed": 0,
+  "total_frames": 30000,
+  "frames_per_batch": 200,
+  "updates_per_batch": 50,
+  "learning_starts": 1000,
+  "batch_size": 64,
+  "buffer_size": 20000,
+  "lr": 0.005,
+  "gamma": 0.99,
+  "hidden": [
+    128,
+    128
+  ],
+  "eps_init": 1.0,
+  "eps_end": 0.05,
+  "eps_decay_frames": 15000,
+  "tau": 0.01
+}

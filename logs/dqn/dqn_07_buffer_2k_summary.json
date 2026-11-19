@@ -1,0 +1,24 @@
+{
+  "name": "dqn_07_buffer_2k",
+  "final_train_reward": 72.28869285583497,
+  "eval_mean": 73.00125094806185,
+  "eval_std": 2.6895633681739834,
+  "minutes": 1.64,
+  "seed": 0,
+  "total_frames": 30000,
+  "frames_per_batch": 200,
+  "updates_per_batch": 50,
+  "learning_starts": 1000,
+  "batch_size": 64,
+  "buffer_size": 2000,
+  "lr": 0.001,
+  "gamma": 0.99,
+  "hidden": [
+    128,
+    128
+  ],
+  "eps_init": 1.0,
+  "eps_end": 0.05,
+  "eps_decay_frames": 15000,
+  "tau": 0.01
+}

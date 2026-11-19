@@ -1,0 +1,24 @@
+{
+  "name": "dqn_10_tau_0.001",
+  "final_train_reward": 74.98869590759277,
+  "eval_mean": 73.68069545148492,
+  "eval_std": 2.4116235266650983,
+  "minutes": 1.62,
+  "seed": 0,
+  "total_frames": 30000,
+  "frames_per_batch": 200,
+  "updates_per_batch": 50,
+  "learning_starts": 1000,
+  "batch_size": 64,
+  "buffer_size": 20000,
+  "lr": 0.001,
+  "gamma": 0.99,
+  "hidden": [
+    128,
+    128
+  ],
+  "eps_init": 1.0,
+  "eps_end": 0.05,
+  "eps_decay_frames": 15000,
+  "tau": 0.001
+}

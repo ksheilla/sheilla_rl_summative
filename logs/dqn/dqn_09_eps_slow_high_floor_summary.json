@@ -1,0 +1,24 @@
+{
+  "name": "dqn_09_eps_slow_high_floor",
+  "final_train_reward": 70.00316886901855,
+  "eval_mean": 71.05348666482487,
+  "eval_std": 3.9409227805664755,
+  "minutes": 1.68,
+  "seed": 0,
+  "total_frames": 30000,
+  "frames_per_batch": 200,
+  "updates_per_batch": 50,
+  "learning_starts": 1000,
+  "batch_size": 64,
+  "buffer_size": 20000,
+  "lr": 0.001,
+  "gamma": 0.99,
+  "hidden": [
+    128,
+    128
+  ],
+  "eps_init": 1.0,
+  "eps_end": 0.2,
+  "eps_decay_frames": 28000,
+  "tau": 0.01
+}

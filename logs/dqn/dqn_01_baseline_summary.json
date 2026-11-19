@@ -1,0 +1,24 @@
+{
+  "name": "dqn_01_baseline",
+  "final_train_reward": 73.25149307250976,
+  "eval_mean": 72.53697555859557,
+  "eval_std": 2.3003050325711536,
+  "minutes": 1.61,
+  "seed": 0,
+  "total_frames": 30000,
+  "frames_per_batch": 200,
+  "updates_per_batch": 50,
+  "learning_starts": 1000,
+  "batch_size": 64,
+  "buffer_size": 20000,
+  "lr": 0.001,
+  "gamma": 0.99,
+  "hidden": [
+    128,
+    128
+  ],
+  "eps_init": 1.0,
+  "eps_end": 0.05,
+  "eps_decay_frames": 15000,
+  "tau": 0.01
+}

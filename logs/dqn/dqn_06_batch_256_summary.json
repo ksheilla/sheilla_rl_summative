@@ -1,0 +1,24 @@
+{
+  "name": "dqn_06_batch_256",
+  "final_train_reward": 73.98157768249511,
+  "eval_mean": 73.03439050212533,
+  "eval_std": 2.7333106887074012,
+  "minutes": 1.81,
+  "seed": 0,
+  "total_frames": 30000,
+  "frames_per_batch": 200,
+  "updates_per_batch": 50,
+  "learning_starts": 1000,
+  "batch_size": 256,
+  "buffer_size": 20000,
+  "lr": 0.001,
+  "gamma": 0.99,
+  "hidden": [
+    128,
+    128
+  ],
+  "eps_init": 1.0,
+  "eps_end": 0.05,
+  "eps_decay_frames": 15000,
+  "tau": 0.01
+}
