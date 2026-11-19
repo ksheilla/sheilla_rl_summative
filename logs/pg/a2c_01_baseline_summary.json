@@ -1,0 +1,21 @@
+{
+  "name": "a2c_01_baseline",
+  "algo": "a2c",
+  "final_train_reward": 64.04145183563233,
+  "eval_mean": 71.1331117352684,
+  "eval_std": 3.002663821477536,
+  "minutes": 1.04,
+  "seed": 0,
+  "total_frames": 30000,
+  "gamma": 0.99,
+  "hidden": [
+    128,
+    128
+  ],
+  "entropy_coef": 0.01,
+  "max_grad_norm": 0.5,
+  "frames_per_batch": 240,
+  "lr": 0.001,
+  "gae_lambda": 0.95,
+  "critic_coef": 0.5
+}

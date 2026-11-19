@@ -1,0 +1,20 @@
+{
+  "name": "reinforce_05_gamma_0.999",
+  "algo": "reinforce",
+  "final_train_reward": 67.39193458557129,
+  "eval_mean": 72.73585803944226,
+  "eval_std": 2.2445787415837737,
+  "minutes": 1.16,
+  "seed": 0,
+  "total_frames": 30000,
+  "gamma": 0.999,
+  "hidden": [
+    128,
+    128
+  ],
+  "entropy_coef": 0.01,
+  "max_grad_norm": 0.5,
+  "frames_per_batch": 240,
+  "lr": 0.003,
+  "normalize_returns": true
+}

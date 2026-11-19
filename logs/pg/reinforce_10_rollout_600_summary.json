@@ -1,0 +1,20 @@
+{
+  "name": "reinforce_10_rollout_600",
+  "algo": "reinforce",
+  "final_train_reward": 62.4034143447876,
+  "eval_mean": 72.6894628222985,
+  "eval_std": 2.6101796052698374,
+  "minutes": 1.0,
+  "seed": 0,
+  "total_frames": 30000,
+  "gamma": 0.99,
+  "hidden": [
+    128,
+    128
+  ],
+  "entropy_coef": 0.01,
+  "max_grad_norm": 0.5,
+  "frames_per_batch": 600,
+  "lr": 0.003,
+  "normalize_returns": true
+}

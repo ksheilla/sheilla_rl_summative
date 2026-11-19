@@ -1,0 +1,20 @@
+{
+  "name": "reinforce_02_lr_1e-3",
+  "algo": "reinforce",
+  "final_train_reward": 56.600933694839476,
+  "eval_mean": 71.20947319778804,
+  "eval_std": 2.9949590772725867,
+  "minutes": 1.01,
+  "seed": 0,
+  "total_frames": 30000,
+  "gamma": 0.99,
+  "hidden": [
+    128,
+    128
+  ],
+  "entropy_coef": 0.01,
+  "max_grad_norm": 0.5,
+  "frames_per_batch": 240,
+  "lr": 0.001,
+  "normalize_returns": true
+}

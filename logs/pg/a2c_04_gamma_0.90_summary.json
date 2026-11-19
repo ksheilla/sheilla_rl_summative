@@ -1,0 +1,21 @@
+{
+  "name": "a2c_04_gamma_0.90",
+  "algo": "a2c",
+  "final_train_reward": 73.13833122253418,
+  "eval_mean": 71.37736615795868,
+  "eval_std": 2.488825293388417,
+  "minutes": 0.68,
+  "seed": 0,
+  "total_frames": 30000,
+  "gamma": 0.9,
+  "hidden": [
+    128,
+    128
+  ],
+  "entropy_coef": 0.01,
+  "max_grad_norm": 0.5,
+  "frames_per_batch": 240,
+  "lr": 0.001,
+  "gae_lambda": 0.95,
+  "critic_coef": 0.5
+}

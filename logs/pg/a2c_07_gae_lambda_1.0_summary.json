@@ -1,0 +1,21 @@
+{
+  "name": "a2c_07_gae_lambda_1.0",
+  "algo": "a2c",
+  "final_train_reward": 60.29628086090088,
+  "eval_mean": 72.69435713024917,
+  "eval_std": 2.4103362472463212,
+  "minutes": 0.79,
+  "seed": 0,
+  "total_frames": 30000,
+  "gamma": 0.99,
+  "hidden": [
+    128,
+    128
+  ],
+  "entropy_coef": 0.01,
+  "max_grad_norm": 0.5,
+  "frames_per_batch": 240,
+  "lr": 0.001,
+  "gae_lambda": 1.0,
+  "critic_coef": 0.5
+}

@@ -1,0 +1,21 @@
+{
+  "name": "a2c_11_rollout_120",
+  "algo": "a2c",
+  "final_train_reward": 65.75730800628662,
+  "eval_mean": 72.84633566400638,
+  "eval_std": 2.080205241274799,
+  "minutes": 0.72,
+  "seed": 0,
+  "total_frames": 30000,
+  "gamma": 0.99,
+  "hidden": [
+    128,
+    128
+  ],
+  "entropy_coef": 0.01,
+  "max_grad_norm": 0.5,
+  "frames_per_batch": 120,
+  "lr": 0.001,
+  "gae_lambda": 0.95,
+  "critic_coef": 0.5
+}

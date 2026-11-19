@@ -1,0 +1,24 @@
+{
+  "name": "ppo_07_epochs_15",
+  "algo": "ppo",
+  "final_train_reward": 72.45711059570313,
+  "eval_mean": 73.81659756694543,
+  "eval_std": 2.560965282512931,
+  "minutes": 2.84,
+  "seed": 0,
+  "total_frames": 30000,
+  "gamma": 0.99,
+  "hidden": [
+    128,
+    128
+  ],
+  "entropy_coef": 0.01,
+  "max_grad_norm": 0.5,
+  "frames_per_batch": 1000,
+  "lr": 0.001,
+  "gae_lambda": 0.95,
+  "critic_coef": 0.5,
+  "clip_epsilon": 0.2,
+  "ppo_epochs": 15,
+  "minibatch_size": 125
+}

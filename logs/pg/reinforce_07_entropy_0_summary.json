@@ -1,0 +1,20 @@
+{
+  "name": "reinforce_07_entropy_0",
+  "algo": "reinforce",
+  "final_train_reward": 72.28895988464356,
+  "eval_mean": 71.1781664607266,
+  "eval_std": 2.9735255067336714,
+  "minutes": 0.99,
+  "seed": 0,
+  "total_frames": 30000,
+  "gamma": 0.99,
+  "hidden": [
+    128,
+    128
+  ],
+  "entropy_coef": 0.0,
+  "max_grad_norm": 0.5,
+  "frames_per_batch": 240,
+  "lr": 0.003,
+  "normalize_returns": true
+}

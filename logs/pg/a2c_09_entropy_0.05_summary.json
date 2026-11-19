@@ -1,0 +1,21 @@
+{
+  "name": "a2c_09_entropy_0.05",
+  "algo": "a2c",
+  "final_train_reward": 62.96682586669922,
+  "eval_mean": 70.76128220290607,
+  "eval_std": 3.355243235316023,
+  "minutes": 0.71,
+  "seed": 0,
+  "total_frames": 30000,
+  "gamma": 0.99,
+  "hidden": [
+    128,
+    128
+  ],
+  "entropy_coef": 0.05,
+  "max_grad_norm": 0.5,
+  "frames_per_batch": 240,
+  "lr": 0.001,
+  "gae_lambda": 0.95,
+  "critic_coef": 0.5
+}

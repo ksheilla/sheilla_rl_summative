@@ -1,0 +1,24 @@
+{
+  "name": "ppo_01_baseline",
+  "algo": "ppo",
+  "final_train_reward": 71.7685646057129,
+  "eval_mean": 73.48479710939077,
+  "eval_std": 2.214439372605337,
+  "minutes": 0.9,
+  "seed": 0,
+  "total_frames": 30000,
+  "gamma": 0.99,
+  "hidden": [
+    128,
+    128
+  ],
+  "entropy_coef": 0.01,
+  "max_grad_norm": 0.5,
+  "frames_per_batch": 1000,
+  "lr": 0.001,
+  "gae_lambda": 0.95,
+  "critic_coef": 0.5,
+  "clip_epsilon": 0.2,
+  "ppo_epochs": 8,
+  "minibatch_size": 125
+}

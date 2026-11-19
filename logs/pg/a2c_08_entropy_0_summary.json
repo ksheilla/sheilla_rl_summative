@@ -1,0 +1,21 @@
+{
+  "name": "a2c_08_entropy_0",
+  "algo": "a2c",
+  "final_train_reward": 62.40620803833008,
+  "eval_mean": 72.69435713024917,
+  "eval_std": 2.4103362472463212,
+  "minutes": 0.63,
+  "seed": 0,
+  "total_frames": 30000,
+  "gamma": 0.99,
+  "hidden": [
+    128,
+    128
+  ],
+  "entropy_coef": 0.0,
+  "max_grad_norm": 0.5,
+  "frames_per_batch": 240,
+  "lr": 0.001,
+  "gae_lambda": 0.95,
+  "critic_coef": 0.5
+}

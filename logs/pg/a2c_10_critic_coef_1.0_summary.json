@@ -1,0 +1,21 @@
+{
+  "name": "a2c_10_critic_coef_1.0",
+  "algo": "a2c",
+  "final_train_reward": 64.7648551940918,
+  "eval_mean": 71.20039549484146,
+  "eval_std": 2.9639069689290296,
+  "minutes": 0.7,
+  "seed": 0,
+  "total_frames": 30000,
+  "gamma": 0.99,
+  "hidden": [
+    128,
+    128
+  ],
+  "entropy_coef": 0.01,
+  "max_grad_norm": 0.5,
+  "frames_per_batch": 240,
+  "lr": 0.001,
+  "gae_lambda": 0.95,
+  "critic_coef": 1.0
+}

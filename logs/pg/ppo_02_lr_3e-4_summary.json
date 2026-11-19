@@ -1,0 +1,24 @@
+{
+  "name": "ppo_02_lr_3e-4",
+  "algo": "ppo",
+  "final_train_reward": 67.87714443206787,
+  "eval_mean": 71.85184984394749,
+  "eval_std": 2.581304212441888,
+  "minutes": 1.06,
+  "seed": 0,
+  "total_frames": 30000,
+  "gamma": 0.99,
+  "hidden": [
+    128,
+    128
+  ],
+  "entropy_coef": 0.01,
+  "max_grad_norm": 0.5,
+  "frames_per_batch": 1000,
+  "lr": 0.0003,
+  "gae_lambda": 0.95,
+  "critic_coef": 0.5,
+  "clip_epsilon": 0.2,
+  "ppo_epochs": 8,
+  "minibatch_size": 125
+}

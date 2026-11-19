@@ -1,0 +1,21 @@
+{
+  "name": "smoke_a2c",
+  "algo": "a2c",
+  "final_train_reward": 54.57792301177979,
+  "eval_mean": 72.69435713024917,
+  "eval_std": 2.4103362472463212,
+  "minutes": 0.28,
+  "seed": 0,
+  "total_frames": 6000,
+  "gamma": 0.99,
+  "hidden": [
+    128,
+    128
+  ],
+  "entropy_coef": 0.01,
+  "max_grad_norm": 0.5,
+  "frames_per_batch": 240,
+  "lr": 0.001,
+  "gae_lambda": 0.95,
+  "critic_coef": 0.5
+}

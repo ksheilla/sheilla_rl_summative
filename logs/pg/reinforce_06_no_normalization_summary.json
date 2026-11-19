@@ -1,0 +1,20 @@
+{
+  "name": "reinforce_06_no_normalization",
+  "algo": "reinforce",
+  "final_train_reward": 44.50395259857178,
+  "eval_mean": 43.61286173507786,
+  "eval_std": 0.9457384185309102,
+  "minutes": 1.0,
+  "seed": 0,
+  "total_frames": 30000,
+  "gamma": 0.99,
+  "hidden": [
+    128,
+    128
+  ],
+  "entropy_coef": 0.01,
+  "max_grad_norm": 0.5,
+  "frames_per_batch": 240,
+  "lr": 0.003,
+  "normalize_returns": false
+}

@@ -1,0 +1,24 @@
+{
+  "name": "smoke_ppo",
+  "algo": "ppo",
+  "final_train_reward": 57.26933975219727,
+  "eval_mean": 70.19097293681965,
+  "eval_std": 3.6306274245481482,
+  "minutes": 0.34,
+  "seed": 0,
+  "total_frames": 6000,
+  "gamma": 0.99,
+  "hidden": [
+    128,
+    128
+  ],
+  "entropy_coef": 0.01,
+  "max_grad_norm": 0.5,
+  "frames_per_batch": 960,
+  "lr": 0.001,
+  "gae_lambda": 0.95,
+  "critic_coef": 0.5,
+  "clip_epsilon": 0.2,
+  "ppo_epochs": 8,
+  "minibatch_size": 120
+}

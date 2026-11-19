@@ -1,0 +1,20 @@
+{
+  "name": "reinforce_11_small_net",
+  "algo": "reinforce",
+  "final_train_reward": 54.81601428985596,
+  "eval_mean": 38.8467544148594,
+  "eval_std": 13.927383624367728,
+  "minutes": 1.24,
+  "seed": 0,
+  "total_frames": 30000,
+  "gamma": 0.99,
+  "hidden": [
+    32,
+    32
+  ],
+  "entropy_coef": 0.01,
+  "max_grad_norm": 0.5,
+  "frames_per_batch": 240,
+  "lr": 0.003,
+  "normalize_returns": true
+}

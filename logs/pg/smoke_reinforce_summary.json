@@ -1,0 +1,20 @@
+{
+  "name": "smoke_reinforce",
+  "algo": "reinforce",
+  "final_train_reward": 58.38446235656738,
+  "eval_mean": 43.19269090212825,
+  "eval_std": 0.863275468493754,
+  "minutes": 0.26,
+  "seed": 0,
+  "total_frames": 6000,
+  "gamma": 0.99,
+  "hidden": [
+    128,
+    128
+  ],
+  "entropy_coef": 0.01,
+  "max_grad_norm": 0.5,
+  "frames_per_batch": 240,
+  "lr": 0.003,
+  "normalize_returns": true
+}

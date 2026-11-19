@@ -1,0 +1,21 @@
+{
+  "name": "a2c_03_lr_3e-3",
+  "algo": "a2c",
+  "final_train_reward": 70.60302391052247,
+  "eval_mean": 72.31724548883463,
+  "eval_std": 2.138172570166389,
+  "minutes": 1.18,
+  "seed": 0,
+  "total_frames": 30000,
+  "gamma": 0.99,
+  "hidden": [
+    128,
+    128
+  ],
+  "entropy_coef": 0.01,
+  "max_grad_norm": 0.5,
+  "frames_per_batch": 240,
+  "lr": 0.003,
+  "gae_lambda": 0.95,
+  "critic_coef": 0.5
+}
