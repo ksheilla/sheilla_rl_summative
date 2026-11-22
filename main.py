@@ -1,4 +1,4 @@
-import argparse
+﻿import argparse
 import json
 from collections import Counter
 from pathlib import Path
@@ -121,10 +121,15 @@ def main():
     parser.add_argument("--seed", type=int, default=7)
     parser.add_argument("--fps", type=float, default=5, help="days per second in the window")
     parser.add_argument("--verbose", action="store_true", help="print every day's decision")
-    parser.add_argument("--no-render", action="store_true", help="skip the visualization window")
+    parser.add_argument("--panel", action="store_true", help="open the interactive control panel")
     parser.add_argument("--api-demo", action="store_true", help="show the JSON prediction example")
     args = parser.parse_args()
+    if args.panel:
+        from control_panel import run_panel
 
+        run_panel(load_agent, choose_action, BEST_RUNS, seed=args.seed, fps=args.fps)
+        return
+    
     run = args.run or BEST_RUNS[args.algo]
     print(f"Loading {args.algo.upper()} agent: {run}")
     net = load_agent(args.algo, run)
