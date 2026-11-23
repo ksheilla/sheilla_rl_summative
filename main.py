@@ -117,19 +117,27 @@ def main():
     parser = argparse.ArgumentParser(description="READit Coach: run a trained RL agent")
     parser.add_argument("--algo", choices=list(FOLDERS), default="dqn")
     parser.add_argument("--run", default=None, help="run name (default: best run of the algorithm)")
-    parser.add_argument("--episodes", type=int, default=1, help="number of students to simulate")
+    parser.add_argument("--episodes", type=int, default=1, help="number of students (classic and no-render modes)")
     parser.add_argument("--seed", type=int, default=7)
-    parser.add_argument("--fps", type=float, default=5, help="days per second in the window")
-    parser.add_argument("--verbose", action="store_true", help="print every day's decision")
-    parser.add_argument("--panel", action="store_true", help="open the interactive control panel")
+    parser.add_argument("--fps", type=float, default=None, help="days per second (default: 2 in the panel, 5 otherwise)")
+    parser.add_argument("--verbose", action="store_true", help="print every day's decision (classic mode)")
+    parser.add_argument("--classic", action="store_true", help="plain window without the control panel")
+    parser.add_argument("--panel", action="store_true", help="open the control panel (already the default)")
+    parser.add_argument("--no-render", action="store_true", help="skip the visualization window")
     parser.add_argument("--api-demo", action="store_true", help="show the JSON prediction example")
     args = parser.parse_args()
-    if args.panel:
-        from control_panel import run_panel
 
-        run_panel(load_agent, choose_action, BEST_RUNS, seed=args.seed, fps=args.fps)
+    # Default: the interactive control panel, with Auto run already started
+    if not (args.classic or args.no_render or args.api_demo):
+        from control_panel import ControlPanel
+
+        panel = ControlPanel(load_agent, choose_action, BEST_RUNS, seed=args.seed, fps=args.fps or 2)
+        if args.algo != "dqn":
+            panel.select_model(args.algo)
+        panel.auto = True
+        panel.run()
         return
-    
+
     run = args.run or BEST_RUNS[args.algo]
     print(f"Loading {args.algo.upper()} agent: {run}")
     net = load_agent(args.algo, run)
@@ -142,7 +150,7 @@ def main():
         print("Response:", predict_json(net, request))
         return
 
-    play(net, args.episodes, args.seed, render=not args.no_render, fps=args.fps, verbose=args.verbose)
+    play(net, args.episodes, args.seed, render=not args.no_render, fps=args.fps or 5, verbose=args.verbose)
 
 
 if __name__ == "__main__":

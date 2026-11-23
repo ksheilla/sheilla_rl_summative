@@ -64,8 +64,10 @@ Figures: `assets/fig1_reward_baselines.png`, `fig2_reward_best.png`, `fig3_dqn_l
 
 ```bash
 uv sync
-uv run main.py                              # DQN agent, visualization window
-uv run main.py --algo ppo --episodes 5 --no-render
+uv run main.py                              # opens the room + control panel, agent starts playing
+uv run main.py --algo ppo                   # same, starting with the PPO agent
+uv run main.py --classic --verbose          # plain window, daily decisions in the terminal
+uv run main.py --no-render --episodes 5     # terminal only, no window
 uv run main.py --api-demo                   # JSON in / JSON out example
 ```
 
